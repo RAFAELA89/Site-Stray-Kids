@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Kids - Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🎵 Stray Kids Blog</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#historia" class="nav-link">História</a></li>
+                <li><a href="#membros" class="nav-link">Integrantes</a></li>
+                <li><a href="#discografia" class="nav-link">Discografia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Blog de Stray Kids</h2>
+            <p>Conheça a história da mais icônica boyband de K-pop da atualidade</p>
+            <button class="btn-cta" onclick="document.getElementById('historia').scrollIntoView({behavior: 'smooth'})">Descubra Mais</button>
+        </div>
+    </section>
+
+    <!-- Seção História -->
+    <section id="historia" class="historia">
+        <div class="container">
+            <h2 class="section-title">A História de Stray Kids</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h3>Formação e Produção</h3>
+                        <p>Stray Kids foi formado pelo programa reality show "Stray Kids" (2017), produzido pela JYP Entertainment. O grupo foi criado através da seleção dos melhores trainees da agência.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>Estreia Oficial</h3>
+                        <p>O grupo fez sua estreia oficial em 25 de março de 2018 com o single "District 9". Rapidamente ganharam reconhecimento pela qualidade das coreografias e produção musical inovadora.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019-2020</div>
+                    <div class="timeline-content">
+                        <h3>Crescimento Global</h3>
+                        <p>Com o lançamento de álbuns como "Levanter" (2019) e "Go生 Live" (2020), Stray Kids começou a expandir sua base de fãs internacionalmente, se tornando conhecidos como "Dominate the World".</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021-2022</div>
+                    <div class="timeline-content">
+                        <h3>Reconhecimento Internacional</h3>
+                        <p>Lançamentos de sucessos globais como "S-Class" (2021) e "Oddinary" (2022) consolidaram o status do grupo no mercado internacional. Sold-out em maiores estádios do mundo.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2023-2024</div>
+                    <div class="timeline-content">
+                        <h3>Dominação do Mercado</h3>
+                        <p>Com álbuns como "★★★★★ (5-STAR)" e "ATE (Anyone, Together, Everyone)", Stray Kids se consolidaram como uma das maiores boygroups da indústria K-pop global.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025-Presente</div>
+                    <div class="timeline-content">
+                        <h3>Legado em Formação</h3>
+                        <p>Continuam quebrando recordes de vendas de álbuns, com turnês mundiais esgotadas e crescimento contínuo de sua base de fãs internacionais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>Informações do Grupo</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>Agência:</strong> JYP Entertainment
+                    </div>
+                    <div class="info-item">
+                        <strong>Data de Estreia:</strong> 25 de março de 2018
+                    </div>
+                    <div class="info-item">
+                        <strong>Membros:</strong> 8 membros
+                    </div>
+                    <div class="info-item">
+                        <strong>Fãs:</strong> STAY
+                    </div>
+                    <div class="info-item">
+                        <strong>Lema:</strong> "Unlock 3.528: Plan"
+                    </div>
+                    <div class="info-item">
+                        <strong>Divisão:</strong> 3 unidades (Hip-hop, Vocal, Dança)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Integrantes -->
+    <section id="membros" class="membros">
+        <div class="container">
+            <h2 class="section-title">Os 8 Talentos de Stray Kids</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterMembros('todos')">Todos</button>
+                <button class="filter-btn" onclick="filterMembros('hiphop')">Hip-hop</button>
+                <button class="filter-btn" onclick="filterMembros('vocal')">Vocal</button>
+                <button class="filter-btn" onclick="filterMembros('danca')">Dança</button>
+            </div>
+
+            <div class="membros-grid">
+                <!-- Bang Chan -->
+                <div class="membro-card" data-unidade="hiphop">
+                    <div class="membro-image">
+                        <img src="img/download.jfif" alt="Bang Chan">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Líder | Produtor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Bang Chan</h3>
+                        <p class="membro-unidade">Hip-hop Unit</p>
+                        <p class="membro-data">03/10/1997 • Australiano</p>
+                        <p class="membro-descricao">Líder carismático, produtor talentoso e voz marcante. Frequentemente lidera as criações musicais do grupo.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Produção</span>
+                            <span class="skill">Rap</span>
+                            <span class="skill">Liderança</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lee Know -->
+                <div class="membro-card" data-unidade="danca">
+                    <div class="membro-image">
+                        <img src="img/images.jfif" alt="Lee Know">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Dançarino Principal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Lee Know</h3>
+                        <p class="membro-unidade">Dance Unit</p>
+                        <p class="membro-data">25/10/1998 • Coreano</p>
+                        <p class="membro-descricao">Dançarino principal com movimentos precisos e expressivos. Destaque nas coreografias mais complexas.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Dança</span>
+                            <span class="skill">Expressão</span>
+                            <span class="skill">Carisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Changbin -->
+                <div class="membro-card" data-unidade="hiphop">
+                    <div class="membro-image">
+                        <img src="img/images (1).jfif" alt="Changbin">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Rapper • Produtor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Changbin</h3>
+                        <p class="membro-unidade">Hip-hop Unit</p>
+                        <p class="membro-data">11/08/1999 • Coreano</p>
+                        <p class="membro-descricao">Rapper excepcional com voz profunda e flow impressionante. Produtor musical talentoso.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Rap</span>
+                            <span class="skill">Produção</span>
+                            <span class="skill">Carisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hyunjin -->
+                <div class="membro-card" data-unidade="danca">
+                    <div class="membro-image">
+                        <img src="img/images (2).jfif" alt="Hyunjin">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Sub-Rapper • Dançarino</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Hyunjin</h3>
+                        <p class="membro-unidade">Dance Unit</p>
+                        <p class="membro-data">20/03/2000 • Coreano</p>
+                        <p class="membro-descricao">Beleza visual impressionante e habilidades de dança profissionais. Movimentos fluidos e graciosos.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Dança</span>
+                            <span class="skill">Visualidade</span>
+                            <span class="skill">Rap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Han -->
+                <div class="membro-card" data-unidade="vocal">
+                    <div class="membro-image">
+                        <img src="img/images (3).jfif" alt="Han">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Vocalist • Produtor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Han</h3>
+                        <p class="membro-unidade">Vocal Unit</p>
+                        <p class="membro-data">14/09/2000 • Coreano</p>
+                        <p class="membro-descricao">Vocal principal com voz suave e encantadora. Produtor musical talentoso em composição de canções.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Vocal</span>
+                            <span class="skill">Produção</span>
+                            <span class="skill">Composição</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Felix -->
+                <div class="membro-card" data-unidade="danca">
+                    <div class="membro-image">
+                        <img src="img/download (1).jfif" alt="Felix">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Sub-Vocalist • Dançarino</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Felix</h3>
+                        <p class="membro-unidade">Dance Unit</p>
+                        <p class="membro-data">20/04/2000 • Australiano</p>
+                        <p class="membro-descricao">Voz única e profunda. Excelente dançarino com movimentos dinâmicos. Muito carismático.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Vocal</span>
+                            <span class="skill">Dança</span>
+                            <span class="skill">Carisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seungmin -->
+                <div class="membro-card" data-unidade="vocal">
+                    <div class="membro-image">
+                        <img src="img/download (2).jfif" alt="Seungmin">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Vocalist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>Seungmin</h3>
+                        <p class="membro-unidade">Vocal Unit</p>
+                        <p class="membro-data">22/09/2000 • Coreano</p>
+                        <p class="membro-descricao">Vocal de primeira linha com voz clara e poderosa. Versatilidade vocal impressionante.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Vocal</span>
+                            <span class="skill">Versatilidade</span>
+                            <span class="skill">Presença</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- I.N -->
+                <div class="membro-card" data-unidade="vocal">
+                    <div class="membro-image">
+                        <img src="img/download (2).jfif" alt="I.N">
+                        <div class="membro-overlay">
+                            <div class="membro-overlay-content">
+                                <p>Maknae • Vocalist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membro-info">
+                        <h3>I.N</h3>
+                        <p class="membro-unidade">Vocal Unit</p>
+                        <p class="membro-data">08/02/2001 • Coreano</p>
+                        <p class="membro-descricao">Membro mais jovem com talento vocal impressionante. Presença no palco madura e dedicado.</p>
+                        <div class="membro-skills">
+                            <span class="skill">Vocal</span>
+                            <span class="skill">Dedicação</span>
+                            <span class="skill">Crescimento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Discografia -->
+    <section id="discografia" class="discografia">
+        <div class="container">
+            <h2 class="section-title">Discografia Principal</h2>
+            
+            <div class="albums-grid">
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download.jfif" alt="I am NOT">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Álbum de Estreia</p>
+                                <small>District 9</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>I am NOT</h3>
+                    <p class="album-year">2018</p>
+                    <p class="album-descricao">Álbum de estreia com a faixa de sucesso "District 9"</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 6 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (1).jfif" alt="Levanter">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Expansão Global</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Levanter</h3>
+                    <p class="album-year">2019</p>
+                    <p class="album-descricao">Marca expansão para mercado internacional</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 13 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (2).jfif" alt="Go生 Live">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Hit Mundial</p>
+                                <small>Back Door</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Go生 Live</h3>
+                    <p class="album-year">2020</p>
+                    <p class="album-descricao">Álbum com o sucesso "문화생활 (Back Door)"</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 11 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (3).jfif" alt="Noeasy">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Primeiro Full-Length</p>
+                                <small>S-Class</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Noeasy</h3>
+                    <p class="album-year">2021</p>
+                    <p class="album-descricao">Primeiro álbum full-length com grandes sucessos</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 14 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (4).jfif" alt="Oddinary">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Álbum Aclamado</p>
+                                <small>특</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Oddinary</h3>
+                    <p class="album-year">2022</p>
+                    <p class="album-descricao">Álbum que consolidou posição no mercado global</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 12 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (5).jfif" alt="5-STAR">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Recordes de Vendas</p>
+                                <small>2M+ Pré-vendas</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>★★★★★ (5-STAR)</h3>
+                    <p class="album-year">2023</p>
+                    <p class="album-descricao">Quebrou recordes históricos de pré-vendas</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 15 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (6).jfif" alt="ATE">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Dominação Global</p>
+                                <small>ATE</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>ATE</h3>
+                    <p class="album-year">2024</p>
+                    <p class="album-descricao">Consolidou posição como uma das maiores boygroups</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 14 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (7).jfif" alt="EVERBLEED">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Inovação Musical</p>
+                                <small>2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>EVERBLEED</h3>
+                    <p class="album-year">2025</p>
+                    <p class="album-descricao">Álbum recente com experimentações musicais</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 13 Faixas</span>
+                    </div>
+                </div>
+
+                <div class="album-card">
+                    <div class="album-cover">
+                        <img src="img/download (8).jfif" alt="Latest Release">
+                        <div class="album-overlay">
+                            <div class="album-overlay-content">
+                                <p>Últimas Novidades</p>
+                                <small>2025</small>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Lançamentos Recentes</h3>
+                    <p class="album-year">2025</p>
+                    <p class="album-descricao">Continuando a trajetória de sucesso e inovação</p>
+                    <div class="album-stats">
+                        <span class="stat">🎵 Diversas Faixas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre o Blog</h3>
+                    <p>Um espaço dedicado aos fãs de Stray Kids para conhecer melhor o grupo, sua história e seus integrantes talentosos.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Importantes</h3>
+                    <ul>
+                        <li><a href="#">JYP Entertainment</a></li>
+                        <li><a href="#">Redes Oficiais</a></li>
+                        <li><a href="#">Comunidade STAY</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stray Kids Blog. Criado com ❤️ por fãs. Não é um site oficial da JYP Entertainment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
