@@ -367,5 +367,73 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll(); // Chamar uma vez ao carregar a página
 
+// ==================== GALERIA DE IMAGENS (UPLOAD & PREVIEW) ====================
+function setupGallery() {
+    const input = document.getElementById('image-input');
+    const gallery = document.getElementById('gallery');
+    if (!gallery) return;
+    if (!gallery.querySelector('.gallery-empty')) {
+        gallery.innerHTML = '<div class="gallery-empty">Nenhuma imagem carregada.</div>';
+    }
+
+    if (input) {
+        input.addEventListener('change', handleFiles);
+    }
+
+    // Drag & drop
+    gallery.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        this.classList.add('dragover');
+    });
+
+    gallery.addEventListener('dragleave', function() {
+        this.classList.remove('dragover');
+    });
+
+    gallery.addEventListener('drop', function(e) {
+        e.preventDefault();
+        this.classList.remove('dragover');
+        const files = e.dataTransfer.files;
+        handleFiles({ target: { files } });
+    });
+}
+
+function handleFiles(e) {
+    const files = e.target.files;
+    const gallery = document.getElementById('gallery');
+    if (!gallery || !files) return;
+
+    // remover placeholder
+    const empty = gallery.querySelector('.gallery-empty');
+    if (empty) empty.remove();
+
+    Array.from(files).forEach(file => {
+        if (!file.type.startsWith('image/')) return;
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+            const img = document.createElement('img');
+            img.src = evt.target.result;
+            img.alt = file.name;
+            img.className = 'gallery-item';
+            img.addEventListener('click', function() {
+                // abrir em nova aba ao clicar
+                const win = window.open('');
+                if (win) {
+                    win.document.write('<title>' + file.name + '</title>');
+                    const i = win.document.createElement('img');
+                    i.src = evt.target.result;
+                    i.style.maxWidth = '100%';
+                    win.document.body.style.margin = '0';
+                    win.document.body.appendChild(i);
+                }
+            });
+            gallery.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setupGallery);
+
 console.log('%c🎵 Stray Kids Blog Carregado! 🎵', 'color: #667eea; font-size: 20px; font-weight: bold;');
 console.log('%cDica: Digite "STAY" para ativar o easter egg! 🌈', 'color: #764ba2; font-size: 14px;');
